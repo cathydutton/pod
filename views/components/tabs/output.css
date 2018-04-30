@@ -1,0 +1,97 @@
+:root {
+  --colour-black: #001429;
+  --colour-dark: #001F3F;
+  --colour-medium: #003D7A;
+  --colour-light: #E0F0FF;
+  --colour-white: #FFFFFF;
+  --colour-bright: #3D9970;
+  --colour-error: #A91919
+}
+.theme-dark {
+  --colour-black: #FFFFFF;
+  --colour-dark: #AAAAAA;
+  --colour-medium: #2ECC40;
+  --colour-light: #048386;
+  --colour-white: #111111;
+  --colour-bright: #FFDC00;
+  --colour-error: #FF851B
+}
+.theme-monochrome {
+  --colour-black: #BD9562;
+  --colour-dark: #AB773F;
+  --colour-medium: #553C1C;
+  --colour-light: #3c240d;
+  --colour-white: #211505;
+  --colour-bright: #AF8857;
+  --colour-error: #A37A48
+}
+:root {
+  --font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+}
+.dyslexic {
+  --font-family: "Comic Sans MS","Comic Sans",cursive
+}
+:root {
+  --text-size: 1.188em
+}
+:root {
+  --break-mobile: 20em;
+  --break-phablet: 30em;
+  --break-tablet: 48em;
+  --break-desktop: 63.750em;
+  --break-wide: 80em
+}
+.tab-list {
+  background: var(--colour-light);
+  padding: 0;
+  margin: 0
+}
+.tab-item {
+  display: block
+}
+.tab-item[data-tab-active] {
+  background: var(--colour-meduim);
+  -webkit-transition: all 150ms cubic-bezier(.42,0,1,1);
+  transition: all 150ms cubic-bezier(.42,0,1,1)
+}
+.tab-link {
+  color: var(--colour-white);
+  display: block;
+  padding: 1rem 2rem;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 150ms cubic-bezier(.42,0,1,1);
+  transition: all 150ms cubic-bezier(.42,0,1,1)
+}
+.tab-panel {
+  background: var(--colour-white);
+  padding: 1rem
+}
+.tab-panel h2 {
+  margin-top: 0
+}
+.tab-panel[aria-hidden=true] {
+  display: none
+}
+@media screen and (min-width:var(--break-mobile)) {
+  .tab-item {
+    display: inline-block
+  }
+  .tab-link {
+    display: inline-block
+  }
+  .tab-link[data-tab-active]:after {
+    content: '';
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid color(var(--colour--medium) lightness(+ 70%))
+  }
+}

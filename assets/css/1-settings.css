@@ -1,0 +1,62 @@
+/*
+  Settings
+  Used with preprocessors and CSS variables and contain font, colors breakpoints, etc.
+  ----------------------------------- */
+
+/* Colors */
+:root {
+  --colour-black: #001429;
+  --colour-dark: #001F3F;
+  --colour-medium: #003D7A;
+  --colour-light: #E0F0FF;
+  --colour-white: #FFFFFF;
+  /* --colour-bright: #F012BE; */
+  --colour-bright: #3D9970;
+  --colour-error: #A91919; 
+}
+
+.theme-dark {
+  --colour-black: #FFFFFF;
+  --colour-dark: #AAAAAA;
+  --colour-medium: #2ECC40;
+  --colour-light: #048386; 
+  --colour-white: #111111;
+  --colour-bright: #FFDC00; 
+  --colour-error: #FF851B;
+}
+
+.theme-monochrome {
+  --colour-black: #BD9562;
+  --colour-dark: #AB773F;
+  --colour-medium: #553C1C;
+  --colour-light: #3c240d;
+  --colour-white: #211505;
+  --colour-bright: #AF8857;
+  --colour-error: #A37A48; 
+}
+
+/* Fonts */
+:root {
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.dyslexic {
+  --font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* Text */
+:root {
+--font-size: 1.188em;
+}
+
+/* Media queries */
+:root {
+  --break-mobile: 20em;
+  --break-phablet: 30em;
+  --break-tablet: 48em;
+  --break-desktop: 63.750em;
+  --break-wide: 80em;
+}
+
+
+

@@ -1,0 +1,64 @@
+<!doctype html>
+  <html lang="en" dir="ltr">
+   <!--
+    ##:::: ##: ####: ########::  ########::::  ###. ###:: ########::::
+    ##:::: ##:. ##:: ##.... ##:. ##.....::::: ##: ##: ##: ##.....:::::
+    ##:::: ##:: ##:: ##:::: ##:: ##:::::::::: ##: ##: ##: ##::::::::::
+    #########:: ##:: ########::: ######:::::: ##: ##: ##: ######::::::
+    ##.... ##:: ##:: ##.. ##:::: ##...::::::: ##: ##: ##: ##...:::::::
+    ##:::: ##:: ##:: ##::. ##::: ##:::::::::: ##: ##: ##: ##::::::::::
+    ##:::: ##: ####: ##:::. ##:  ########:::: ##::::: ##: ########::::
+    For Freelance or Open Source projects contact info@cathydutton.co.uk
+    http://www.cathydutton.co.uk
+    -->
+    <head>
+      <meta charset="UTF-8">
+      <!-- Instruct Internet Explorer to use its latest rendering engine -->
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      {% block meta %}   
+      {% endblock %}
+      <meta name="keywords" content="Component styleguide, UX, CSS, PostCSS, JavaScript, A11y">
+      <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
+      <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+      <!-- Helps prevent duplicate content issues -->
+      {# <link rel="canonical" href="http://example.com/2017/09/a-new-article-to-red.html"> #}
+      <meta name="author" content="Cathy Dutton - www.cathydutton.co.uk" />
+      <!-- Twitter card -->
+      <meta name="twitter:card" content="summary"/>
+      <meta name="twitter:description" content="Component styleguide, UX, CSS, PostCSS, JavaScript, A11y"/>
+      <meta name="twitter:title" content="Cathy_Dutton"/>
+      <meta name="twitter:site" content="@cathy_dutton"/>
+      <meta name="twitter:image" content="/img/profile-image.jpg"/>
+      <link rel="stylesheet" href="https://rawgit.com/ffoodd/a11y.css/master/css/a11y-en.css">
+      <link rel="stylesheet" href="/css/pod.css">
+    </head>
+  <body>
+    <a href="#main">skip to main content</a>
+    {% block header %}
+      <header role="banner" class="header">
+        <div aria-label="Accessibility tools">
+          <fieldset>
+            <legend>Font size</legend>
+            <button id="increase-font" type="button">A+</button>
+            <button id="decrease-font" type="button">A-</button>
+          </fieldset>
+          <fieldset>
+            <legend>Theme</legend>
+            <button id="theme-default" class="button-ally" type="button">Default theme</button>
+            <button id="theme-dark" class="button-ally" type="button">Dark theme</button>
+            <button id="theme-monochrome" class="button-ally" type="button">Monochrome theme</button>
+          </fieldset>
+          <fieldset>
+            <legend class="visually-hidden">Font</legend>
+            <button class="button-ally "id="default-font" type="button"  aria-label="Change font to Helvetica">Default</button>
+            <button class="button-ally "id="dyslexic-font" type="button" aria-label="Change font to Comic Sans">Comic Sans</button>
+          </fieldset>
+        </div>
+      </header>
+    {% endblock %}
+
+
+
+
+

@@ -1,0 +1,22 @@
+{% extends "./templates/layout.njk" %}
+
+{% block meta %}
+  <title>Pod - Component styleguide</title>
+  <meta name="description" content="Component styleguide built with PostCSS and JavaScript">
+{% endblock %}
+
+
+{% block content %}
+  <h1>
+    Components 
+  </h1>
+
+<ul> 
+  {% for name in componentList %}
+     <li><a href="/components/{{ name.name }}">{{ name.name | replace("-", " ") | capitalize }}</a></li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
+
+

@@ -1,0 +1,16 @@
+/*
+  Skip navigation links
+  ----------------------------------- */
+
+  [href="#main"] {
+    position: absolute;
+    top: 0;
+    right: 100%;
+  }
+
+  [href="#main"] {
+      position: absolute;
+      top: 0;
+      right: 100%;
+  }
+

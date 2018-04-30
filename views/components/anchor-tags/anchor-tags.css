@@ -1,0 +1,31 @@
+/*
+  Anchor tags
+  ----------------------------------- */
+
+  @import "../../globals/css/1-settings";
+  
+  a {
+    padding: .2em 0;
+    border-bottom: 1px solid currentColor;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus  {
+    background-color: var(--colour-bright);
+    outline: 3px solid var(--colour-bright);
+    transition: all .3s ease-in-out;
+  }
+  
+  a[target=_blank]::after {
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    white-space: nowrap;
+    content: '(opens new window)';
+  }
+  
+
+  

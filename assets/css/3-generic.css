@@ -1,0 +1,53 @@
+/*
+  Generic
+  Reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.
+  ----------------------------------- */
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: var(--text-size)
+}
+
+html,
+body {
+  clear: fix;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: var(--break-mobile);
+  max-width: var(--break-wide);
+  margin: 0;
+  padding: 0;
+  color: var(--colour-black);
+  background: var(--colour-white);
+  font-family: var(--font-family);
+  font-size: var(--font-size)
+}
+
+blockquote {
+  margin: 0;
+  padding: 15px;
+  border: 1px solid var(--colour-meduim);
+  background: var(--colour-light);
+}
+
+pre {
+  overflow: scroll;
+  padding: 10px 7px;
+  border: 1px solid color(var(---colour-light) lightness(+ 70%));
+  background: var(--grey-light);
+}
+

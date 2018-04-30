@@ -1,0 +1,55 @@
+:root {
+  --colour-black: #001F3F;
+  --colour-dark: #003D7A;
+  --colour-medium: #0057AD;
+  --colour-light: #E0F0FF;
+  --colour-white: #FFFFFF;
+  --colour-bright: #F012BE;
+  --colour-error: #A91919
+}
+.contrast {
+  --colour-black: #FFFFFF;
+  --colour-dark: #AAAAAA;
+  --colour-medium: #2ECC40;
+  --colour-light: ##39CCCC;
+  --colour-white: #111111;
+  --colour-bright: #FFDC00;
+  --colour-error: #FF851B
+}
+:root {
+  --font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+}
+.dyslexic {
+  --font-family: "Comic Sans MS","Comic Sans",cursive
+}
+:root {
+  --text-size: 1.188em
+}
+:root {
+  --break-mobile: 20em;
+  --break-phablet: 30em;
+  --break-tablet: 48em;
+  --break-desktop: 63.750em;
+  --break-wide: 80em
+}
+a {
+  padding: .2em 0;
+  border-bottom: 1px solid currentColor;
+  color: inherit;
+  text-decoration: none
+}
+a:focus,
+a:hover {
+  background-color: var(--colour-bright);
+  outline: 3px solid var(--colour-bright);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
+a[target=_blank]::after {
+  display: inline-block;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  white-space: nowrap;
+  content: '(opens new window)'
+}

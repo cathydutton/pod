@@ -1,0 +1,55 @@
+/*
+  Buttons
+  ----------------------------------- */
+
+  @import "../../globals/css/1-settings";
+
+  button {
+    cursor: pointer;
+    display: block;
+    margin: .5em 0 0;
+    padding: .5em 2em;
+    border-radius: .2em;
+    color: var(--colour-white);
+    line-height: 2.2;
+    box-shadow: 0;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 0px 0px currentColor;
+  }
+
+  button:hover,
+  button:active,
+  button:focus,
+  button:visited,
+   {
+    cursor: pointer;
+    opacity: 0.74;
+    text-decoration: underline;
+    border-radius: .5em;
+  }
+
+  button[disabled="disabled"],
+  button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+/* .btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+} */
+
+.button-primary {
+  background: var(--colour-bright);
+}
+
+.button-secondary {
+  background: var(--colour-dark);
+}
+
+.button-ally {
+  background: var(--colour-light);
+  background: var(--colour-dark);
+}
+
