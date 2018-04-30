@@ -3,8 +3,15 @@
   Utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
   ----------------------------------- */
 
+  /* Wrapper  */
+
+  /* .wrapper {
+    margin: 0 auto;
+  } */
+
 
 /* Visualy hidden */
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -13,13 +20,17 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-
 /* Clear fix */
-.clear {
-  clear: fix;
+
+.clear:before,
+.clear:after {
+  display: table;
+  content: '';
 }
 
+.clear:after {
+  clear: both;
+}
 
-/* Grid layout */
 
 

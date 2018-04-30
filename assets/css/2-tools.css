@@ -1,13 +1,29 @@
 /*
   Tools
-  Globally used mixins and functions. It’s important not to output any CSS in the first 2 layers
+  Globally used styles mixins and functions. 
   ----------------------------------- */
 
+  /* Print styles */
+
+  @media print {
+    .wrapper > *:not(main) {
+      display: none;
+    }
   
+  }
+
+  /* Animations */
   
-
-
-
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes fadeOut {
+    0% {opacity: 100;}
+    100% {opacity: 0;}
+  }
+  
 
 
 

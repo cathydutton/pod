@@ -1,19 +1,72 @@
 /*
   Elements
-  styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.
+  styling for bare HTML elements (like H1, A, etc.). 
+  These come with default styling from the browser so we can redefine them here.
   ----------------------------------- */
-
-
-
-/* Select */
-::selection {
   
-}
+  html {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    color: var(--colour-black);
+    background: var(--colour-white);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+  }
+
+  section {
+
+  }
+
+  article {
+
+  }
+
+  header {
+
+  }
+
+  footer {
+    
+  }
+
+  aside {
+
+  }
+   
+  blockquote {
+    margin: 0;
+    padding: 15px;
+    border: 1px solid var(--colour-meduim);
+    background: var(--colour-light);
+  }
+  
+  pre {
+    overflow: scroll;
+    padding: 10px 7px;
+    border: 1px solid color(var(---colour-light) lightness(+ 70%));
+    background: var(--grey-light);
+  }
+
+  /* Select */
+
+  ::selection {
+    background: var(--colour-bright);
+  }
+  
+  
 
 
-/* Lists */
 
-/* Description lists */
+
 
 
 

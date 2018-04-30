@@ -1,0 +1,30 @@
+/*
+  Navigation
+  ----------------------------------- */
+
+.navigation__list {
+  margin: .4em;
+  text-align: center;
+  animation: fadeIn 2s forwards;  
+}
+  
+.navigation__item {
+  display: inline-block;
+  margin: .4em;  
+}
+  
+.navigation__anchor {
+  display: inline;
+  color: var(--colour-white);
+}
+  
+.navigation__anchor .active {
+  border-bottom: 4px solid var(--colour-bright);
+}
+  
+.navigation__anchor:hover,
+.navigation__anchor:focus {
+  color: var(--colour-dark);
+} 
+  
+

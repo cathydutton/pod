@@ -1,0 +1,35 @@
+/*
+  Typography
+  ----------------------------------- */
+
+  h1 {
+    font-size: 2.25em;
+  }
+  
+  h2 {
+    font-size: 1.625em;
+  }
+  
+  h3 {
+    font-size: 1.375em;
+  }
+  
+  h4,
+  h5,
+  h6 {
+    font-size: 1.188em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  input, 
+  select, 
+  textarea, 
+  button {
+    font-family:inherit;
+    font-size: .8em;
+  }
+
+  

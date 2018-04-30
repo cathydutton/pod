@@ -1,16 +1,16 @@
 /*
   Settings
-  Used with preprocessors and CSS variables and contain font, colors breakpoints, etc.
+  CSS variables for fonts, colors, etc.
   ----------------------------------- */
 
 /* Colors */
+
 :root {
   --colour-black: #001429;
   --colour-dark: #001F3F;
   --colour-medium: #003D7A;
   --colour-light: #E0F0FF;
   --colour-white: #FFFFFF;
-  /* --colour-bright: #F012BE; */
   --colour-bright: #3D9970;
   --colour-error: #A91919; 
 }
@@ -36,6 +36,7 @@
 }
 
 /* Fonts */
+
 :root {
   --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -45,18 +46,12 @@
 }
 
 /* Text */
+
 :root {
 --font-size: 1.188em;
 }
 
-/* Media queries */
-:root {
-  --break-mobile: 20em;
-  --break-phablet: 30em;
-  --break-tablet: 48em;
-  --break-desktop: 63.750em;
-  --break-wide: 80em;
-}
+
 
 
 

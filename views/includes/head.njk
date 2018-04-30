@@ -37,24 +37,7 @@
     <a href="#main">skip to main content</a>
     {% block header %}
       <header role="banner" class="header">
-        <div aria-label="Accessibility tools">
-          <fieldset>
-            <legend>Font size</legend>
-            <button id="increase-font" type="button">A+</button>
-            <button id="decrease-font" type="button">A-</button>
-          </fieldset>
-          <fieldset>
-            <legend>Theme</legend>
-            <button id="theme-default" class="button-ally" type="button">Default theme</button>
-            <button id="theme-dark" class="button-ally" type="button">Dark theme</button>
-            <button id="theme-monochrome" class="button-ally" type="button">Monochrome theme</button>
-          </fieldset>
-          <fieldset>
-            <legend class="visually-hidden">Font</legend>
-            <button class="button-ally "id="default-font" type="button"  aria-label="Change font to Helvetica">Default</button>
-            <button class="button-ally "id="dyslexic-font" type="button" aria-label="Change font to Comic Sans">Comic Sans</button>
-          </fieldset>
-        </div>
+      {% include "components/a11y-buttons/a11y-buttons.njk" %}
       </header>
     {% endblock %}
 
