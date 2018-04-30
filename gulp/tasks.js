@@ -21,7 +21,6 @@ gulp.task('generate-assets', function (done) {
 })
 
 
-
 gulp.task('watch', function (done) {
   runSequence('watch-css',
                'watch-scripts',

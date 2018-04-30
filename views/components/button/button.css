@@ -2,8 +2,6 @@
   Buttons
   ----------------------------------- */
 
-  @import "../../globals/css/1-settings";
-
   button {
     cursor: pointer;
     display: block;
@@ -34,11 +32,11 @@
     cursor: not-allowed;
   }
 
-/* .btn:active {
+.btn:active {
   transform: translate(0px, 5px);
   -webkit-transform: translate(0px, 5px);
   box-shadow: 0px 1px 0px 0px;
-} */
+}
 
 .button-primary {
   background: var(--colour-bright);

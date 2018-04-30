@@ -6,12 +6,8 @@
   {% include "components/" + componentName + "/" + componentName + ".njk" %}
 {% endset %}
 
-{% set componentPostCSS %}
-  {% include "components/" +  componentName + "/" + componentName + ".css" %}
-{% endset %}
-
 {% set componentCSS %}
-  {% include "components/" +  componentName + "/output.css" %}
+  {% include "components/" +  componentName + "/" + componentName +".css" %}
 {% endset %}
 
 {% set componentJS %}
@@ -38,13 +34,10 @@
   {% endblock %}
 
   <h2>Demo</h2>
-  {# {% include "" + componentName + "/" + componentName + ".njk" %} #}
+  {% include "components/" + componentName + "/" + componentName + ".njk" %}
 
   <h2>Markup</h2>
   <pre><code>{{- componentHtml | e -}}</code></pre>
-
-  <h2>PostCSS</h2>
-  <pre><code>{{- componentPostCSS | e -}}</code></pre>
 
   <h3>CSS</h3>
   <pre><code>{{- componentCSS | e -}}</code></pre>

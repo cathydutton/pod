@@ -1,8 +1,6 @@
 /*
   Tabs
   ----------------------------------- */
-  
-  @import "../../globals/css/1-settings";
 
   .tab-list {
     background: var(--colour-light);

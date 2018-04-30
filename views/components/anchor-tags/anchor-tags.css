@@ -2,8 +2,6 @@
   Anchor tags
   ----------------------------------- */
 
-  @import "../../globals/css/1-settings";
-  
   a {
     padding: .2em 0;
     border-bottom: 1px solid currentColor;

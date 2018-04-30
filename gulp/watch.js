@@ -10,7 +10,7 @@ const config = require('./config.json')
 
 gulp.task('watch-css', function () {
   livereload.listen();
-  return gulp.watch(config.paths.assets + 'css/**', {cwd: './'}, ['css'])
+  return gulp.watch([config.paths.assets + 'css/**', config.paths.components + '**/**.css']  , {cwd: './'}, ['css'])
 })
 
 gulp.task('watch-images', function () {

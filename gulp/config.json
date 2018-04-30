@@ -2,6 +2,7 @@
   "paths": {
     "public": "public/",
     "views": "views/",
+    "components": "views/components/",
     "assets" : "assets/",
     "nodeModules": "node_modules/"
   }

@@ -32,7 +32,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--colour-black);
-  background: var(--colour-white);
+  background: var(--colour-b);
   font-family: var(--font-family);
   font-size: var(--font-size)
 }
