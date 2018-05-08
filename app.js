@@ -33,6 +33,18 @@ app.get('/', function (req, res) {
   res.render('index')
 })
 
+// About page - render the component list template from dist folder
+app.get('/about', function (req, res) {
+  res.locals.componentList = tree.children
+  res.render('about')
+})
+
+// Component page - render the component list template from dist folder
+app.get('/component-list', function (req, res) {
+  res.locals.componentList = tree.children
+  res.render('component-list')
+})
+
 
 // Listen to port
 app.listen(3000);

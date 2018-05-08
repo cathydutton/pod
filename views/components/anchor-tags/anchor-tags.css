@@ -10,8 +10,7 @@
   
   a:hover,
   a:focus  {
-    background-color: var(--colour-bright);
-    outline: 3px solid var(--colour-bright);
+    background-color: var(--colour-light);
     transition: all .3s ease-in-out;
   }
   

@@ -17,7 +17,7 @@ const livereload = require('gulp-livereload');
 const config = require('./config.json')
 
 gulp.task('scripts', () => {
-  return gulp.src([config.paths.assets + 'js/*.js'])
+  return gulp.src([config.paths.assets + 'js/*.js', config.paths.components + '**/*.js'])
     
   
     .pipe(gulpif(isProd, uglify({

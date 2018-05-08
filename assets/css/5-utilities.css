@@ -5,9 +5,14 @@
 
   /* Wrapper  */
 
-  /* .wrapper {
-    margin: 0 auto;
-  } */
+  .wrapper {
+    width: 100%;
+    max-width: 800px;
+    display: table-cell;
+    background: var(--colour-white);
+    padding-left: 1em; 
+  }
+  
 
 
 /* Visualy hidden */

@@ -1,0 +1,62 @@
+/*
+  Sidebar
+  ----------------------------------- */
+
+/* Split out wrapper styles */
+
+.sidebar {
+  position: relative;
+	background: var(--colour-dark);
+	height: 100vw;
+	display: table-cell;
+  border-right: 4px solid var(--colour-bright);
+}
+ 
+.sidebar .closed {
+  -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+  width: 0;
+} 
+
+.sidebar .open {
+  -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+  width: 200px;
+}
+
+.sidebar__button { 
+	top: 10px;  
+  left: -4px;
+	position: relative; 
+	z-index: 100; 
+	padding: 20px; 
+  cursor: pointer;
+  border: 0;
+  background: var(--colour-dark);
+  color: var(--colour-bright);
+  text-transform: uppercase;
+  border-radius: 0 5px 5px 0;
+  border: solid 4px var(--colour-bright);
+  border-left: 0;
+}
+
+.sidebar__icon__svg {
+    width: 20px;
+    height: 32px;
+    fill: var(--colour-bright);
+}
+
+
+
+
+
+
+
+
+
+	
+
+	
+

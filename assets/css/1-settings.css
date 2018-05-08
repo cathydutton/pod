@@ -6,12 +6,12 @@
 /* Colors */
 
 :root {
-  --colour-black: #001429;
-  --colour-dark: #001F3F;
-  --colour-medium: #003D7A;
-  --colour-light: #E0F0FF;
+  --colour-black: #121212;
+  --colour-dark: #2a2a2a;
+  --colour-medium: #444343;
+  --colour-light: #DFDCDC;
   --colour-white: #FFFFFF;
-  --colour-bright: #3D9970;
+  --colour-bright: #ffa600;
   --colour-error: #A91919; 
 }
 

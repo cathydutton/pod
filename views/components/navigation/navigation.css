@@ -5,26 +5,51 @@
 .navigation__list {
   margin: .4em;
   text-align: center;
-  animation: fadeIn 2s forwards;  
+  animation: fadeIn 2s forwards;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 280px;
+  margin: 10px 0 0;
+  padding: 0 23px 50px;
 }
   
 .navigation__item {
-  display: inline-block;
-  margin: .4em;  
+  margin: .4em;
+  display: block;
+  margin: 0; 
+  background: var(--colour-dark);
 }
   
 .navigation__anchor {
-  display: inline;
   color: var(--colour-white);
-}
-  
-.navigation__anchor .active {
-  border-bottom: 4px solid var(--colour-bright);
+  display: block;
+  margin-bottom: 5px;
+  padding: 10px 0 10px 10px;
+  border:  solid 1px var(--colour-medium);
+  border-left: solid 4px var(--colour-bright);
+  text-decoration: none;
+  word-wrap: break-word;
 }
   
 .navigation__anchor:hover,
 .navigation__anchor:focus {
-  color: var(--colour-dark);
-} 
-  
+  background-color: var(--colour-light);
+  color:  var(--colour-dark);
+  text-decoration: underline;
+}
 
+.navigation__anchor.active {
+  background: var(--colour-bright);
+  color:  var(--colour-dark);
+  border-left: solid 4px var(--colour-light);
+}
+    
+.navigation__anchor.active .navigation__anchor__text {
+  border-bottom: solid 1px  var(--colour-dark);
+}
+
+.navigation__anchor.active:hover {
+  text-decoration: none;
+  cursor: not-allowed;
+}

@@ -20,5 +20,5 @@ gulp.task('watch-images', function () {
 
 gulp.task('watch-scripts', function () {
   livereload.listen();
-  return gulp.watch(config.paths.assets + 'js/**', {cwd: './'}, ['scripts'])
+  return gulp.watch([config.paths.assets + 'js/**', config.paths.components + '**/**.js'], {cwd: './'}, ['scripts'])
 })
