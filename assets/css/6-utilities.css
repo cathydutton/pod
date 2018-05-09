@@ -3,19 +3,7 @@
   Utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
   ----------------------------------- */
 
-  /* Wrapper  */
-
-  .wrapper {
-    width: 100%;
-    max-width: 800px;
-    display: table-cell;
-    background: var(--colour-white);
-    padding-left: 1em; 
-  }
-  
-
-
-/* Visualy hidden */
+/* Visually hidden */
 
 .visually-hidden {
   position: absolute;

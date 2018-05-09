@@ -12,6 +12,7 @@
   max-width: 280px;
   margin: 10px 0 0;
   padding: 0 23px 50px;
+  display: block;
 }
   
 .navigation__item {
