@@ -11,7 +11,8 @@
   --colour-medium: #444343;
   --colour-light: #DFDCDC;
   --colour-white: #FFFFFF;
-  --colour-bright: #ffa600;
+  /* --colour-bright: #ffa600; */
+  --colour-bright: #FA10E5;
   --colour-error: #A91919; 
 }
 
@@ -52,6 +53,11 @@
 }
 
 
-
-
+/* Media queries */
+/* :root {
+  --break-large: 1280px;
+  --break-medium: 768px;
+  --break-small: 480px;
+  }
+  */
 

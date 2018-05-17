@@ -4,83 +4,42 @@
   ----------------------------------- */
 
 
-  /* MOVE BUTTON ON SIDEBAR TO COMPONENT FOLDER AS STANDALONE THING */
-
-  /* Wrapper  */
-
   .wrapper {
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    overflow-y: scroll;
+    display: grid;
+    grid-template-areas: 
+    "aside header"
+    "aside main"
+    "aside footer";
+    grid-template-columns: 280px minmax(200px, 1200px);
+    grid-gap: 1em;
   }
 
-  .content-wrapper {
-    height: auto;
-    width: 100%;
-    max-width: 800px;
+  aside {
+    grid-area: aside;
+    background: var(--colour-dark);
   }
 
-  .sidebar-open .content-wrapper {
-    transition: all 0.3s ease-in-out;
-    padding-left: 280px;
+  header {
+    grid-area: header;
   }
 
-  .sidebar-closed .content-wrapper {
-    transition: all 0.3s ease-in-out;
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
   }
 
 
+  @media only screen and (min-width: 768px) {
+    
+    .wrapper {
+      grid-template-areas: 
+      "aside aside"
+      "header header"
+      "main main"
+      "footer footer";
+    }
 
-
-
-
-
- /*
-  Sidebar
-  ----------------------------------- */
-.sidebar {
-  height: 100%; 
-  position: absolute;
-  width: 280px;
-  top: 0;
-  left: 0;
-  /* z-index: 100; */
-  background: var(--colour-dark);
-  border-right: solid 4px var(--colour-bright);
-}
-
-.sidebar-open .sidebar {
-  overflow: scroll;
-  transition: all 0.3s ease-in-out;
-  left: 280;
-  width: 280px;
-} 
-
-.sidebar-closed .sidebar {
-  overflow: scroll;
-	transition: all 0.3s ease-in-out;
-  width: 0;
-  left: 0;
-} 
-
-.sidebar__button { 
-	top: 10px;  
-  left: -4px;
-	position: relative; 
-	z-index: 100; 
-	padding: 20px; 
-  cursor: pointer;
-  border: 0;
-  background: var(--colour-dark);
-  color: var(--colour-bright);
-  text-transform: uppercase;
-  border-radius: 0 5px 5px 0;
-  border: solid 4px var(--colour-bright);
-  border-left: 0;
-  transition: all 0.3s ease-in-out;
-} 
-  
-
-
-
+  }
