@@ -1,0 +1,19 @@
+/*
+  Navigation
+  ----------------------------------- */
+
+.sub-navigation__item {
+  display: inline-block;
+  margin: 1em .4em;
+}
+  
+.sub-navigation__anchor {
+  color: var(--colour-dark);
+  word-wrap: break-word;
+}
+  
+.sub-navigation__anchor.active {
+  border-bottom: 5px solid var(--colour-bright);
+}
+    
+

@@ -4,14 +4,10 @@
 
 .navigation__list {
   margin: .4em;
-  text-align: center;
-  animation: fadeIn 2s forwards;
-  position: relative;
-  overflow: hidden;
   width: 100%;
   max-width: 280px;
-  margin: 10px 0 0;
-  padding: 0 23px 50px;
+  margin: .4em 0 0;
+  padding: 0 2em 1.4em;
   display: block;
 }
   
@@ -25,8 +21,8 @@
 .navigation__anchor {
   color: var(--colour-white);
   display: block;
-  margin-bottom: 5px;
-  padding: 10px 0 10px 10px;
+  margin-bottom: .6em;
+  padding: .4em 0 .4em .4em;
   border:  solid 1px var(--colour-medium);
   border-left: solid 4px var(--colour-bright);
   text-decoration: none;
@@ -53,4 +49,30 @@
 .navigation__anchor.active:hover {
   text-decoration: none;
   cursor: not-allowed;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .navigation__list {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .navigation__item {
+    display: inline-block;
+    margin: 0 .2em;
+  }
+
+  .navigation__anchor {
+    border:  0;
+    border-bottom: solid 1px var(--colour-white);
+  }
+
+  .navigation__anchor.active {
+    color: var(--colour-white);
+    background: none;
+    border:  0;
+    border-bottom: solid 4px var(--colour-bright);
+  }
+
 }

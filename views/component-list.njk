@@ -12,9 +12,9 @@
     Components 
   </h1>
 
-<ul> 
+<ul class="unordered-list"> 
   {% for name in componentList %}
-     <li><a href="/components/{{ name.name }}">{{ name.name | replace("-", " ") | capitalize }}</a></li>
+     <li class="unordered-list__list-item"><a href="/components/{{ name.name }}">{{ name.name | replace("-", " ") | capitalize }}</a></li>
   {% endfor %}
 </ul>
 

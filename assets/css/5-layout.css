@@ -11,28 +11,36 @@
     "aside main"
     "aside footer";
     grid-template-columns: 280px minmax(200px, 1200px);
-    grid-gap: 1em;
   }
 
   aside {
     grid-area: aside;
     background: var(--colour-dark);
+    margin-right: 1.4em;
+    padding-top: 1.4em;
   }
 
   header {
     grid-area: header;
+    padding: .6em;
+    animation: fadeIn 2s forwards;
   }
 
   main {
     grid-area: main;
+    padding: .6em;
+    animation: fadeIn 2s forwards;
   }
 
   footer {
+    text-align: center;
     grid-area: footer;
+    padding: .6em;
+    animation: fadeIn 2s forwards;
   }
 
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 768px) {
     
     .wrapper {
       grid-template-areas: 
