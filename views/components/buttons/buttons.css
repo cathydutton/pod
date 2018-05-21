@@ -3,7 +3,6 @@
   ----------------------------------- */
 
   button {
-    cursor: pointer;
     display: block;
     margin: .5em 0 0;
     padding: .5em 2em;
@@ -13,14 +12,13 @@
     box-shadow: 0;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 1px 0px 0px currentColor;
+    background: var(--colour-dark);
   }
 
   button:hover,
   button:active,
   button:focus,
-  button:visited,
-   {
-    cursor: pointer;
+  button:visited {
     opacity: 0.74;
     text-decoration: underline;
     border-radius: .5em;
@@ -32,18 +30,30 @@
     cursor: not-allowed;
   }
 
-.btn:active {
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-  box-shadow: 0px 1px 0px 0px;
-}
+  .button:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+  }
 
-.button-primary {
-  background: var(--colour-bright);
-}
+  .button--primary {
+    background: var(--colour-bright);
+  }
 
-.button-secondary {
-  background: var(--colour-dark);
-}
+  .button--secondary {
+    background: var(--colour-medium);
+  }
+
+  .button--submit {
+    background: var(--colour-bright);
+  }
+
+  .button--reset {
+    background: var(--colour-medium);
+  }
+
+  .button--disabled {
+    background: var(--colour-medium);
+  }
 
 

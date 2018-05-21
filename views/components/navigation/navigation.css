@@ -34,6 +34,7 @@
   background-color: var(--colour-light);
   color:  var(--colour-dark);
   text-decoration: underline;
+  border-bottom: 0;
 }
 
 .navigation__anchor.active {

@@ -26,6 +26,8 @@
     animation: fadeIn 2s forwards;
   }
 
+  header 
+
   main {
     grid-area: main;
     padding: .6em;

@@ -12,8 +12,10 @@
   a:focus  {
     background-color: var(--colour-light);
     transition: all .3s ease-in-out;
+    border-bottom: 5px solid var(--colour-bright);
   }
-  
+
+  /* External window */
   a[target=_blank]::after {
     display: inline-block;
     overflow: hidden;

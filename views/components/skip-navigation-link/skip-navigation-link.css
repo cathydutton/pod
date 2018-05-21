@@ -2,13 +2,13 @@
   Skip navigation links
   ----------------------------------- */
 
-  [href="#main"] {
+  [href="#main-content"] {
     position: absolute;
     top: 0;
     right: 100%; /* moves off screen */
   }
   
-  [href="#main"]:focus {
+  [href="#main-content"]:focus {
     right: auto;
   }
 

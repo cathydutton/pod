@@ -34,11 +34,11 @@
       <link rel="stylesheet" href="/css/pod.css">
     </head>
   <body>
+  <a href="#main-content">Skip to main content</a>
   <div class="wrapper">
-   
     {% block header %}
       <header role="banner" class="header">
-        <a href="#main-content">Skip to main content</a>
+        {% include "components/a11y-buttons/a11y-buttons.njk" %}
         <h1 class="company-name">Header One</h1>
         <p>Description of page</p>
       </header>
