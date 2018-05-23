@@ -7,33 +7,29 @@
 
 :root {
   --colour-black: #121212;
-  --colour-dark: #2a2a2a;
-  --colour-medium: #444343;
-  --colour-light: #DFDCDC;
+  --colour-dark: #001F3F;
+  --colour-medium: #046B99;
+  --colour-light: #B3EFFF;
   --colour-white: #FFFFFF;
-  /* --colour-bright: #ffa600; */
-  --colour-bright: #FA10E5;
-  --colour-error: #A91919; 
+  --colour-bright: #FBDB1D;
 }
 
 .theme-dark {
   --colour-black: #FFFFFF;
-  --colour-dark: #AAAAAA;
-  --colour-medium: #2ECC40;
-  --colour-light: #048386; 
-  --colour-white: #111111;
-  --colour-bright: #FFDC00; 
-  --colour-error: #FF851B;
+  --colour-dark: #FBFF7C;
+  --colour-medium: #FFCA2D;
+  --colour-light: #434444;
+  --colour-white: #001F3F;
+  --colour-bright: #9D2064;
 }
 
 .theme-monochrome {
-  --colour-black: #BD9562;
-  --colour-dark: #AB773F;
+  --colour-black: #211505;
+  --colour-dark: #3c240d;
   --colour-medium: #553C1C;
-  --colour-light: #3c240d;
-  --colour-white: #211505;
-  --colour-bright: #AF8857;
-  --colour-error: #A37A48; 
+  --colour-light: #FDE5BA;
+  --colour-white: #FDF1D8;
+  --colour-bright: #EFA60B;
 }
 
 /* Fonts */

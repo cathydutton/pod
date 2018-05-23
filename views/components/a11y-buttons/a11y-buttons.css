@@ -2,25 +2,17 @@
   A11y buttons
   ----------------------------------- */
 
-.accessibility-tools {
-  float: right;
+.accessibility-tools fieldset {
+  margin-bottom: 1em;
+  padding: .4em;
 }
 
-.accessibility-tools__text-size {
-  
-}
-
-.accessibility-tools__colour-theme {
-  
-}
-
-.accessibility-tools__font-family {
-  
+.accessibility-tools legend {
+  padding: .4em;
 }
 
 .button--ally {
-  background: var(--colour-light);
-  background: var(--colour-medium);
+  background: var(--colour-dark);
+  font-size: .6em;
+  display: inline-block;
 }
-
-

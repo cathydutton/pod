@@ -11,6 +11,10 @@
   color: var(--colour-dark);
   word-wrap: break-word;
 }
+
+.sub-navigation__anchor:hover {
+  color: var(--colour-bright);
+}
   
 .sub-navigation__anchor.active {
   border-bottom: 5px solid var(--colour-bright);

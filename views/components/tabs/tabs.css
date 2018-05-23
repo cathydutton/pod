@@ -2,58 +2,65 @@
   Tabs
   ----------------------------------- */
 
-  .tab-list {
-    background: var(--colour-light);
+
+  
+  .tablist {
+    background: #0d8a00;
     padding: 0;
     margin: 0;
   }
   
-  .tab-item {
+  [role="presentation"] {
     display: block;
   }
   
-  .tab-item[data-tab-active] {
-    background: var(--colour-meduim);
-    -webkit-transition: all 150ms cubic-bezier(0.42, 0, 1, 1);
-    transition: all 150ms cubic-bezier(0.42, 0, 1, 1);
+  [role="presentation"][data-tab-active] {
+    background: #036800;
+    -webkit-transition: all 100ms cubic-bezier(0.42, 0, 1, 1);
+    transition: all 100ms cubic-bezier(0.42, 0, 1, 1);
   }
   
-  .tab-link {
-    color: var(--colour-white);
+  [role="tab"] {
+  /*   border: 3px solid transparent; */
+    color: #fff;
     display: block;
     padding: 1rem 2rem;
     position: relative;
     text-decoration: none;
-    -webkit-transition: all 150ms cubic-bezier(0.42, 0, 1, 1);
-    transition: all 150ms cubic-bezier(0.42, 0, 1, 1);
+    -webkit-transition: all 100ms cubic-bezier(0.42, 0, 1, 1);
+    transition: all 100ms cubic-bezier(0.42, 0, 1, 1);
   }
   
-  .tab-panel {
-    background: var(--colour-white);
+  [role="tab"]:focus {
+      outline: 0;
+      background-color: #0d8a00;
+      box-shadow: inset 0 0 0 3px #036800;
+  }
+  
+  [role="tabpanel"] {
+    background: #f0f0f0;
     padding: 1rem;
   }
   
-  .tab-panel h2 {
+  [role="tabpanel"] h2 {
     margin-top: 0;
   }
   
-  .tab-panel[aria-hidden="true"] {
+  [role="tabpanel"][aria-hidden="true"] {
     display: none;
   }
   
-
-
-
-  @media screen and (min-width: var(--break-mobile)) {
-    .tab-item {
+  [role="tabpanel"]:focus {
+    outline: 0;
+    box-shadow: inset 0 0 0 2px #036800;
+  }
+  
+  @media screen and (min-width: 800px) {
+    [role="presentation"] {
       display: inline-block;
     }
   
-    .tab-link {
-      display: inline-block;
-    }
-  
-    .tab-link[data-tab-active]:after {
+    [role="presentation"][data-tab-active] [role="tab"]:after {
       content: '';
       display: inline-block;
       margin: auto;
@@ -65,6 +72,7 @@
       height: 0;
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
-      border-top: 10px solid color(var(--colour--medium) lightness(+ 70%));
+      border-top: 10px solid #036800;
     }
   }
+  

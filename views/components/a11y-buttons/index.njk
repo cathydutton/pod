@@ -1,14 +1,14 @@
 {% extends "../../templates/component.njk" %}
+{% set hasJS = true %}
 
 {% block meta %}
   <title>Pod - {{ componentName | replace("-", " ") | capitalize }}</title>
   <meta name="description" content="Accessible button markup and CSS">
 {% endblock %}
 
-
-
-{% block componentDescription %}
-  <p>A button is... </p>
+{% block pageHeading %}
+  <h1>{{ componentName | replace("-", " ") | capitalize }}</h1>
+  <p>A A11y button is... </p>
 {% endblock %}
 
 

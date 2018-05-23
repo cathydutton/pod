@@ -2,15 +2,19 @@
 {% set page_id = "component-list" %} 
 
 {% block meta %}
-  <title>Pod - Component styleguide</title>
+  <title>Pod - Component list</title>
   <meta name="description" content="Component styleguide built with PostCSS and JavaScript">
 {% endblock %}
 
 
+{% block pageHeading %}
+  <h1 class="company-name">Components</h1>
+  <p>Description of page</p>
+{% endblock %}
+
+
 {% block content %}
-  <h1>
-    Components 
-  </h1>
+
 
 <ul class="unordered-list"> 
   {% for name in componentList %}

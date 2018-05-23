@@ -16,9 +16,6 @@
 
 {% block content %}
 
-  {% block componentName %}
-  <h1>{{ componentName | replace("-", " ") | capitalize }}</h1>
-  {% endblock %}
 
 
   {# Link to can I use  #}
@@ -36,7 +33,11 @@
   <h2>Demo</h2>
   {% include "components/" + componentName + "/" + componentName + ".njk" %}
 
-  <h2>Markup</h2>
+  <h2>Code</h2>
+ <p class="visuallyhidden">Use left and right arrows to navigate between tabs.</p>
+
+  <h3>Markup</h3>
+ 
   <pre><code>{{- componentHtml | e -}}</code></pre>
 
   <h3>CSS</h3>
