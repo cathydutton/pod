@@ -2,65 +2,72 @@
   Tabs
   ----------------------------------- */
 
+  .tabs {
+    border: solid 1px var(--colour-dark);
+  }
 
-  
-  .tablist {
-    background: #0d8a00;
+  .tab-list {
+    background: var(--colour-dark);
     padding: 0;
     margin: 0;
   }
   
-  [role="presentation"] {
+  .tab-item {
     display: block;
   }
   
-  [role="presentation"][data-tab-active] {
-    background: #036800;
+  .tab-item[data-tab-active] {
+    background: var(--colour-dark);
     -webkit-transition: all 100ms cubic-bezier(0.42, 0, 1, 1);
     transition: all 100ms cubic-bezier(0.42, 0, 1, 1);
+    text-decoration: none;
   }
   
-  [role="tab"] {
-  /*   border: 3px solid transparent; */
-    color: #fff;
+  .tab-link {
+    color: var(--colour-white);
     display: block;
-    padding: 1rem 2rem;
+    padding: 1em 1em;
     position: relative;
     text-decoration: none;
     -webkit-transition: all 100ms cubic-bezier(0.42, 0, 1, 1);
     transition: all 100ms cubic-bezier(0.42, 0, 1, 1);
+    border-bottom: 0;
+    border-right: solid 1px var(--colour-light);
+    text-decoration: underline;
   }
   
-  [role="tab"]:focus {
+  .tab-link:focus {
       outline: 0;
-      background-color: #0d8a00;
-      box-shadow: inset 0 0 0 3px #036800;
+      background-color: var(--colour-bright);
+      box-shadow: inset 0 0 0 3px var(--colour-bright);
+      color: var(--colour-dark);
   }
   
-  [role="tabpanel"] {
-    background: #f0f0f0;
-    padding: 1rem;
+  .tab-panel {
+    background: var(--colour-white);
+    padding: 1em;
+    background: var(--colour-light);
   }
   
-  [role="tabpanel"] h2 {
+  .tab-panel h2 {
     margin-top: 0;
   }
   
-  [role="tabpanel"][aria-hidden="true"] {
+  .tab-panel[aria-hidden="true"] {
     display: none;
   }
   
-  [role="tabpanel"]:focus {
+  .tab-panel:focus {
     outline: 0;
-    box-shadow: inset 0 0 0 2px #036800;
+    box-shadow: inset 0 0 0 2px var(--colour-medium);
   }
   
   @media screen and (min-width: 800px) {
-    [role="presentation"] {
+    .tab-item {
       display: inline-block;
     }
   
-    [role="presentation"][data-tab-active] [role="tab"]:after {
+    .tab-item[data-tab-active] [role="tab"]:after {
       content: '';
       display: inline-block;
       margin: auto;
@@ -72,7 +79,7 @@
       height: 0;
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
-      border-top: 10px solid #036800;
+      border-top: 10px solid var(--colour-bright);
     }
   }
   

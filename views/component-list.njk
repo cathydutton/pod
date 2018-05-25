@@ -8,7 +8,7 @@
 
 
 {% block pageHeading %}
-  <h1 class="company-name">Components</h1>
+  <h1>Components</h1>
   <p>Description of page</p>
 {% endblock %}
 
@@ -18,7 +18,7 @@
 
 <ul class="unordered-list"> 
   {% for name in componentList %}
-     <li class="unordered-list__list-item"><a href="/components/{{ name.name }}">{{ name.name | replace("-", " ") | capitalize }}</a></li>
+     <li class="unordered-list__list-item"><a href="/components/{{ name.name }}" class="anchor">{{ name.name | replace("-", " ") | capitalize }}</a></li>
   {% endfor %}
 </ul>
 

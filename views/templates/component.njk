@@ -1,4 +1,5 @@
 {% extends "./layout.njk" %}
+{% set page_id = "component-list" %} 
 
 {% set componentName = componentPath %}
 
@@ -30,22 +31,51 @@
   {% block componentDescription %}
   {% endblock %}
 
-  <h2>Demo</h2>
-  {% include "components/" + componentName + "/" + componentName + ".njk" %}
+  <section>
+    <h2>Demo</h2>
+    {% include "components/" + componentName + "/" + componentName + ".njk" %}
+  </section>
+  <section>
+    <h2>Markup</h2>
+    <p>Use the tabbend navagation to view the component markup.</p>
+  </section>
 
-  <h2>Code</h2>
- <p class="visuallyhidden">Use left and right arrows to navigate between tabs.</p>
+  <span class="visually-hidden">Use left and right arrows to navigate between tabs.</span>
+  <div class="js-tab-widget">
+    <ul class="tab-list">
+      <li class="tab-item">
+        <a class="tab-link" href="#tab-1">HTML</a>
+      </li>
+      <li class="tab-item">
+        <a class="tab-link" href="#tab-2">CSS</a>
+      </li>
+      {% if hasJS %}
+        <li class="tab-item">
+          <a class="tab-link" href="#tab-3">JavaScript</a>
+        </li>
+      {% endif %}
+    </ul>
+    <div id="tab-1" class="tab-panel">
+      <h3 class="visually-hidden">HTML</h3>
+      <pre><code>{{- componentHtml | e -}}</code></pre>
+    </div>
+    <div id="tab-2" class="tab-panel">
+      <h3 class="visually-hidden">CSS</h3>
+      <pre><code>{{- componentCSS | e -}}</code></pre>
+    </div>
+    {% if hasJS %}
+      <div id="tab-3" class="tab-panel">
+        <h3 class="visually-hidden">JavaScript</h3>
+        <pre><code>{{- componentJS | e -}}</code></pre>
+      </div>
+    {% endif %}
+  </div>
 
-  <h3>Markup</h3>
- 
-  <pre><code>{{- componentHtml | e -}}</code></pre>
 
-  <h3>CSS</h3>
-  <pre><code>{{- componentCSS | e -}}</code></pre>
 
-  {% if hasJS %}
-    <h3>JavaScript</h3>
-    <pre><code>{{- componentJS | e -}}</code></pre>
-  {% endif %}
+
+
+
+
 
 {% endblock %}

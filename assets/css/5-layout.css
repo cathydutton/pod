@@ -10,7 +10,11 @@
     "aside header"
     "aside main"
     "aside footer";
-    grid-template-columns: 280px minmax(200px, 1200px);
+    grid-template-columns: 280px minmax(200px, 1000px);
+  }
+
+  section {
+    margin-bottom: .8em;
   }
 
   /* Main grid */
@@ -18,7 +22,6 @@
     grid-area: aside;
     background: var(--colour-dark);
     margin-right: 1.4em;
-    padding-top: 1.4em;
   }
   
 
@@ -73,6 +76,7 @@
 
   .accessibility-tools {
     grid-area: a11y;
+    width: 300px;
   }
 
 
@@ -86,6 +90,7 @@
 
     .accessibility-tools {
       margin-bottom: 1em;
+      width: 100%;
     }
 
   }

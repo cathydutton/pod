@@ -8,4 +8,6 @@
 @import '3-generic';
 @import '4-elements';
 @import '5-layout';
-@import '6-utilities';
+@import '6-component-typography';
+@import '6-component-tabs';
+@import '7-utilities';

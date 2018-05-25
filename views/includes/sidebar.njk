@@ -1,14 +1,6 @@
-<style>
-.logo {
-  width: 70px;
-  height: 70px;
-  background: var(--colour-bright);
-  text-align: center;
-}
-</style>
 
 <aside class="sidebar">
-  <div class="logo">Logo</div>
+ {% include "components/logo/logo.njk" %}
   <ul class="navigation__list">
     <li class="navigation__item">
       <a href="/" title="Go to the home page" class="navigation__anchor {% if page_id == 'home' %}active  {% endif %}">

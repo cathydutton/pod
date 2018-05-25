@@ -8,13 +8,13 @@
 :root {
   --colour-black: #121212;
   --colour-dark: #001F3F;
-  --colour-medium: #046B99;
-  --colour-light: #B3EFFF;
+  --colour-medium: #03366A;
+  --colour-light: #f3f3f3;
   --colour-white: #FFFFFF;
   --colour-bright: #FBDB1D;
 }
 
-.theme-dark {
+.theme-contrast {
   --colour-black: #FFFFFF;
   --colour-dark: #FBFF7C;
   --colour-medium: #FFCA2D;
@@ -49,11 +49,5 @@
 }
 
 
-/* Media queries */
-/* :root {
-  --break-large: 1280px;
-  --break-medium: 768px;
-  --break-small: 480px;
-  }
-  */
+
 

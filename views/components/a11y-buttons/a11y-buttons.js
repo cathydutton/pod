@@ -25,7 +25,6 @@ const decreaseFont = document.getElementById('decrease-font');
 
 // Increase text size
 increaseFont.addEventListener('click', function (e) {
-// increaseFont.onclick = function(){
   var number = parseFloat(fontSize) 
   number += 0.2
   fontSize = number;
@@ -35,7 +34,6 @@ increaseFont.addEventListener('click', function (e) {
 
 // Decrease text size
 decreaseFont.addEventListener('click', function (e) {
-// decreaseFont.onclick = function(){
   var number = parseFloat(fontSize) 
   number -= 0.2
   fontSize = number;   
@@ -60,14 +58,12 @@ var defaultFont = document.getElementById('default-font');
 
 // Dyslexic font family
 dyslexicFont.addEventListener('click', function (e) {
-// dyslexicFont.onclick = function(){
   body.style.setProperty('--font-family', '"Comic Sans MS", "Comic Sans", cursive');
   localStorage.setItem("fontFamily", '"Comic Sans MS", "Comic Sans", cursive');
 });
 
 // Default font family
 defaultFont.addEventListener('click', function (e) {
-// defaultFont.onclick = function(){
   body.style.setProperty('--font-family', rootStyles.getPropertyValue('--font-family'));
   localStorage.setItem('fontFamily', rootStyles.getPropertyValue('--font-family'));
 });
@@ -77,25 +73,22 @@ defaultFont.addEventListener('click', function (e) {
 
 // Set buttons
 const themeDefault = document.getElementById('theme-default');
-const themeDark = document.getElementById('theme-dark');
+const themeContrast = document.getElementById('theme-contrast');
 const themeMonochrome = document.getElementById('theme-monochrome');
 
 body.className = localStorage.getItem('currentTheme');
 
 themeDefault.addEventListener('click', function (e) {
-//themeDefault.onclick = function(){
   body.className = 'theme-default';
   localStorage.setItem("currentTheme", 'theme-default');
 });
 
-themeDark.addEventListener('click', function (e) {
-//themeDark.onclick = function(){
-  body.className = 'theme-dark';
-  localStorage.setItem('currentTheme', 'theme-dark');
+themeContrast.addEventListener('click', function (e) {
+  body.className = 'theme-contrast';
+  localStorage.setItem('currentTheme', 'theme-contrast');
 });
 
 themeMonochrome.addEventListener('click', function (e) {
-//themeMonochrome.onclick = function(){
   body.className = 'theme-monochrome';
   localStorage.setItem('currentTheme', 'theme-monochrome');
 });

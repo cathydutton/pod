@@ -12,7 +12,6 @@
 }
 
 .button--ally {
-  background: var(--colour-dark);
-  font-size: .6em;
-  display: inline-block;
+  background: var(--colour-medium);
+  font-size: .65em;
 }
