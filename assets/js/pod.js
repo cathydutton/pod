@@ -6,13 +6,12 @@
   'use strict';
 
 
-  //Mahe URL TAB NAME
-  // Make link tab name
-
-
   // Tabs
  
   var tabWidget = [].slice.call(document.querySelectorAll('.js-tab-widget')) || [];
+  
+  // Make URLs descriptive
+  var tabLinkText = ["html", "css", "JavaScript"];
  
   var tabClickEvent = function(tabLink, tabLinks, tabPanels, linkIndex, e) {
  
@@ -98,9 +97,9 @@
  
     tabLinks.forEach(function(link, i) {
       var anchor = link.getAttribute('href').split('#')[1];
-      //var anchor = link.getAttribute('href')[1];
       var attributes = {
-        'id': 'tab-link-' + i,
+        //'id': 'tab-link-' + i,
+        'id': 'tab-link-' + tabLinkText[i],
         'role': 'tab',
         'tabIndex': '-1',
         'aria-selected': 'false',
@@ -149,7 +148,9 @@
       };
        
       // set up next tab link
-      nextTabLink.setAttribute('href', '#tab-link-' + nextTabLinkIndex);
+      //nextTabLink.setAttribute('href', '#tab-link-' + nextTabLinkIndex);
+      nextTabLink.setAttribute('href', '#tab-link-' + tabLinkText[nextTabLinkIndex]);
+      nextTabLink.setAttribute('class', 'anchor');
       nextTabLink.textContent = 'Next Tab';
       panel.appendChild(nextTabLink);
  
@@ -164,11 +165,6 @@
     });
   });
 
-
-
-    
-    
-   
  
 })();
   

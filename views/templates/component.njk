@@ -1,5 +1,4 @@
 {% extends "./layout.njk" %}
-{% set page_id = "component-list" %} 
 
 {% set componentName = componentPath %}
 
@@ -41,17 +40,17 @@
   </section>
 
   <span class="visually-hidden">Use left and right arrows to navigate between tabs.</span>
-  <div class="js-tab-widget">
+  <div class="js-tab-widget tabs">
     <ul class="tab-list">
-      <li class="tab-item">
-        <a class="tab-link" href="#tab-1">HTML</a>
+    <li class="tab-item" data-tab-active>
+       <a class="tab-link" href="#html" data-tab-active aria-selected="true">HTML</a>
       </li>
       <li class="tab-item">
-        <a class="tab-link" href="#tab-2">CSS</a>
+        <a class="tab-link" href="#css">CSS</a>
       </li>
       {% if hasJS %}
         <li class="tab-item">
-          <a class="tab-link" href="#tab-3">JavaScript</a>
+          <a class="tab-link" href="#JavaScript">JavaScript</a>
         </li>
       {% endif %}
     </ul>
@@ -69,7 +68,7 @@
         <pre><code>{{- componentJS | e -}}</code></pre>
       </div>
     {% endif %}
-  </div>
+  </div>
 
 
 
