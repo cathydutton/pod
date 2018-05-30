@@ -5,6 +5,7 @@
   ----------------------------------- */
   
   html {
+    font-size: var(--font-size);
     line-height: 1.5;
     margin: 0;
     padding: 0;
@@ -19,10 +20,7 @@
     color: var(--colour-black);
     background: var(--colour-white);
     font-family: var(--font-family);
-    font-size: var(--font-size);
   }
-
-
 
   blockquote {
     margin: 0;
@@ -30,16 +28,16 @@
     border: 1px solid var(--colour-meduim);
     background: var(--colour-light);
   }
-  
-  pre {
-    overflow: scroll;
-    padding: 10px 7px;
-    border: 1px solid color(var(---colour-light) lightness(+ 70%));
-    background: var(--grey-light);
+ 
+  pre code {
+    white-space: pre-wrap;       
+    white-space: -moz-pre-wrap;  
+    white-space: -pre-wrap;      
+    white-space: -o-pre-wrap;    
+    word-wrap: break-word; 
   }
 
   /* Select */
-
   ::selection {
     background: var(--colour-bright);
   }

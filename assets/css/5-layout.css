@@ -3,7 +3,6 @@
   CSS grid classes and fallbacks
   ----------------------------------- */
 
-
   .wrapper {
     display: grid;
     grid-template-areas: 
@@ -53,6 +52,7 @@
       "header header"
       "main main"
       "footer footer";
+      grid-template-columns: 1fr;
     }
 
     aside {

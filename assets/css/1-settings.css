@@ -4,7 +4,6 @@
   ----------------------------------- */
 
 /* Colors */
-
 :root {
   --colour-black: #121212;
   --colour-dark: #001F3F;
@@ -33,7 +32,6 @@
 }
 
 /* Fonts */
-
 :root {
   --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -43,10 +41,20 @@
 }
 
 /* Text */
-
 :root {
---font-size: 1.188em;
+--font-size: 16px;
 }
+
+@media screen and (max-width: 480px) {
+  
+  :root {
+    --font-size: 14px;
+  }
+
+}
+
+
+
 
 
 
