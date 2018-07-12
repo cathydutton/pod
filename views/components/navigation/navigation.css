@@ -54,7 +54,7 @@
 }
 
 /* Media queries */
-@media only screen and (max-width: 980px) {
+/* @media only screen and (max-width: 980px) {
 
   .navigation__list {
     text-align: center;
@@ -90,4 +90,4 @@
     border-bottom: solid 4px var(--colour-bright);
   }
 
-}
+} */

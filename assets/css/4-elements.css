@@ -22,6 +22,21 @@
     font-family: var(--font-family);
   }
 
+  header,
+  main,
+  footer {
+    padding: .6em;
+    animation: fadeIn 2s forwards;
+  }
+  
+  footer {
+    text-align: center;
+  }
+
+  section {
+    margin-bottom: .8em;
+  }
+
   blockquote {
     margin: 0;
     padding: 15px;
@@ -41,6 +56,8 @@
   ::selection {
     background: var(--colour-bright);
   }
+
+
   
   
 

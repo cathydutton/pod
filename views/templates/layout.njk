@@ -36,25 +36,32 @@
     <body>
       <a href="#main-content">Skip to main content</a>
       <div class="wrapper">
-        
-        {% block header %}
-          <header role="banner" class="header">
-            {% include "components/a11y-buttons/a11y-buttons.njk" %}
-            <div class="page-headings">
-               {% block pageHeading %}
-               {% endblock %} 
-            </div>
-          </header>
-        {% endblock %}
 
         {% include "includes/sidebar.njk" %}
 
-        <main id="main-content" class="content" role="main">
-          {% block content %}
+        <div class="content">
+        
+          {% block header %}
+            <header role="banner" class="header">
+              <div class="page-headings">
+                {% block pageHeading %}
+                {% endblock %} 
+              </div>
+              {% include "components/a11y-buttons/a11y-buttons.njk" %}
+            </header>
           {% endblock %}
-        </main>
 
-        {% include "includes/footer.njk" %}
+
+
+          <main id="main-content" class="content" role="main">
+            {% block content %}
+            {% endblock %}
+          </main>
+
+          {% include "includes/footer.njk" %}
+
+        </div>
+
       </div>
     <script src="/js/pod.js"></script>
   </body>

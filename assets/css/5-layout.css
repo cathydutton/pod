@@ -1,96 +1,40 @@
 /*
-  Grid
-  CSS grid classes and fallbacks
+  Layout
+  CSS grid and Flexbox responsive content based layout.
   ----------------------------------- */
 
   .wrapper {
-    display: grid;
-    grid-template-areas: 
-    "aside header"
-    "aside main"
-    "aside footer";
-    grid-template-columns: 280px minmax(200px, 1000px);
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
   }
 
-  section {
-    margin-bottom: .8em;
-  }
-
-  /* Main grid */
-  aside {
-    grid-area: aside;
+  /* Main Flex box 2 column layout */
+  .sidebar {
+    flex: 1 0 0;
+    padding: .5em;
     background: var(--colour-dark);
-    margin-right: 1.4em;
   }
   
-
-  header {
-    grid-area: header;
-    padding: .6em;
-    animation: fadeIn 2s forwards;
+  .content {
+    flex: 10 0 10em;
+    padding: .5em;
+    width: 100%;
   }
 
-  main {
-    grid-area: main;
-    padding: .6em;
-    animation: fadeIn 2s forwards;
-  }
-
-  footer {
-    text-align: center;
-    grid-area: footer;
-    padding: .6em;
-    animation: fadeIn 2s forwards;
-  }
-
-
-  @media only screen and (max-width: 980px) {
-    
-    .wrapper {
-      grid-template-areas: 
-      "aside aside"
-      "header header"
-      "main main"
-      "footer footer";
-      grid-template-columns: 1fr;
-    }
-
-    aside {
-      margin-right: 0;
-    }
-
-  }
-
-
-  /* Header grid */
+  /* Header CSS grid */
   header {
     display: grid;
-    grid-template-areas: 
-    "title a11y";
-    grid-template-columns: 1fr max-content;
-  }
-
-  .page-title {
-    grid-area: title;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 1em;
   }
 
   .accessibility-tools {
-    grid-area: a11y;
-    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: .5em;
   }
+  
 
 
-  @media only screen and (max-width: 980px) {
 
-    header {
-      grid-template-areas: 
-      "a11y a11y"
-      "title title";
-    }
-
-    .accessibility-tools {
-      margin-bottom: 1em;
-      width: 100%;
-    }
-
-  }

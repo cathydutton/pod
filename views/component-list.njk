@@ -9,19 +9,17 @@
 
 {% block pageHeading %}
   <h1>Components</h1>
-  <p>Description of page</p>
+  <p>List of components</p>
 {% endblock %}
 
 
 {% block content %}
-
-
-<ul class="unordered-list"> 
-  {% for name in componentList %}
-     <li class="unordered-list__list-item"><a href="/components/{{ name.name }}" class="anchor">{{ name.name | replace("-", " ") | capitalize }}</a></li>
-  {% endfor %}
-</ul>
-
+  <p>dqkldkelqw</p>
+  <ul class="unordered-list"> 
+    {% for name in componentList %}
+      <li class="unordered-list__list-item"><a href="/components/{{ name.name }}" class="anchor">{{ name.name | replace("-", " ") | capitalize }}</a></li>
+    {% endfor %}
+  </ul>
 {% endblock %}
 
 
