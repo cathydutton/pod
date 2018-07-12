@@ -4,9 +4,12 @@
 
 .navigation__list {
   margin: .4em 0 0;
-  max-width: 280px;
+  /* max-width: 280px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  
   padding: 1em;
-  display: block;
+  /* display: block; */
   background: var(--colour-medium);
   border-top: solid 2px var(--colour-black);
   border-bottom: solid 2px var(--colour-black);
@@ -14,7 +17,7 @@
   
 .navigation__item {
   margin: .4em;
-  display: block;
+  /* display: block; */
   background: var(--colour-dark);
 }
   
