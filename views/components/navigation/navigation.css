@@ -4,12 +4,9 @@
 
 .navigation__list {
   margin: .4em 0 0;
-  /* max-width: 280px; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  
+  display: flex;
+  flex-flow: row wrap;
   padding: 1em;
-  /* display: block; */
   background: var(--colour-medium);
   border-top: solid 2px var(--colour-black);
   border-bottom: solid 2px var(--colour-black);
@@ -17,19 +14,20 @@
   
 .navigation__item {
   margin: .4em;
-  /* display: block; */
+  display: block;
   background: var(--colour-dark);
+  list-style: none;
+  min-width: 180px;
 }
   
 .navigation__anchor {
   color: var(--colour-white);
   display: block;
-  margin: .6em 0 ;
-  padding: .4em 0 .4em .8em;
+  padding: .4em .8em;
   border-bottom: 0;
   border-left: 4px solid var(--colour-bright);
   text-decoration: none;
-  word-wrap: break-word;
+  height: 100%;
 }
   
 .navigation__anchor:hover,
