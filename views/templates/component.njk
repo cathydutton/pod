@@ -55,23 +55,25 @@
       {% endif %}
     </ul>
     <div id="tab-1" class="tab-panel">
-      <a href="#copy" aria-live="assertive">Copy</a>
       <h3 class="visually-hidden">HTML</h3>
-      <pre><code>{{- componentHtml | e -}}</code></pre>
+      <button class="button--copy button--right" data-clipboard-target="#HTML">Copy</button>
+      <pre id="HTML"><code>{{- componentHtml | e -}}</code></pre>
     </div>
     <div id="tab-2" class="tab-panel">
-      <a href="#copy" aria-live="assertive">Copy</a>
       <h3 class="visually-hidden">CSS</h3>
-      <pre><code>{{- componentCSS | e -}}</code></pre>
+      <button class="button--copy button--right" data-clipboard-target="#CSS">Copy</button>
+      <pre id="CSS"><code>{{- componentCSS | e -}}</code></pre>
     </div>
     {% if hasJS %}
       <div id="tab-3" class="tab-panel">
-        <a href="#copy" aria-live="assertive">Copy</a>
         <h3 class="visually-hidden">JavaScript</h3>
-        <pre><code>{{- componentJS | e -}}</code></pre>
+        <button class="button--copy button--right" data-clipboard-target="#JavaScript">Copy</button>
+        <pre id="JavaScript"><code>{{- componentJS | e -}}</code></pre>
       </div>
     {% endif %}
   </div>
 
-
 {% endblock %}
+
+
+

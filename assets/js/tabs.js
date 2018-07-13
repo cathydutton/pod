@@ -1,5 +1,5 @@
 /*
-  Base and Global scripts
+ Tabs
   ----------------------------------- */
 
 (function() {

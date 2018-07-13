@@ -30,6 +30,7 @@
       <meta name="twitter:title" content="Cathy_Dutton"/>
       <meta name="twitter:site" content="@cathy_dutton"/>
       <meta name="twitter:image" content="/img/profile-image.jpg"/>
+      {# A11y CSS #}
       {# <link rel="stylesheet" href="https://rawgit.com/ffoodd/a11y.css/master/css/a11y-en.css"> #}
       <link rel="stylesheet" href="/css/pod.css">
     </head>
@@ -64,5 +65,25 @@
 
       </div>
     <script src="/js/pod.js"></script>
+    {# Copy code button JS #}
+    <script>
+      var clipboard = new ClipboardJS('.button--copy');
+      clipboard.on('success', function(e) {
+          console.log(e);
+      });
+      clipboard.on('error', function(e) {
+          console.log(e);
+      });
+    </script>
+    {# Cookie banner JS #}
+    <script>
+      window.addEventListener("load", function(){
+      window.cookieconsent.initialise({})});
+    </script>
+
   </body>
 </html>
+
+
+
+

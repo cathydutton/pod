@@ -46,6 +46,10 @@
     color: var(--colour-dark);
   }
 
+  .button--right {
+    float: right;
+  }
+
 
 
 
