@@ -27,19 +27,23 @@ app.use(express.static('./public'));
 // Fire controllers
 componentController(app);
 
-// Index page - render the component list template from dist folder
+// Index page - render the home page template 
 app.get('/', function (req, res) {
   res.locals.componentList = tree.children
   res.render('index')
 })
 
-// About page - render the component list template from dist folder
+// About page - render the about template 
 app.get('/about', function (req, res) {
-  res.locals.componentList = tree.children
   res.render('about')
 })
 
-// Component page - render the component list template from dist folder
+// Cookie page - render the cookie policy template 
+app.get('/cookies', function (req, res) {
+  res.render('cookies')
+})
+
+// Component page - render the component list template
 app.get('/component-list', function (req, res) {
   res.locals.componentList = tree.children
   res.render('component-list')

@@ -32,7 +32,10 @@
 
   <section>
     <h2>Demo</h2>
-    {% include "components/" + componentName + "/" + componentName + ".njk" %}
+    <p>Resize the panel to view the demo in different container sizes.</p>
+    <div class="demo">
+      {% include "components/" + componentName + "/" + componentName + ".njk" %}
+    </div>
   </section>
   <section>
     <h2>Markup</h2>

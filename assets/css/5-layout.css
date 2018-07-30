@@ -36,6 +36,13 @@
     grid-gap: .5em;
   }
   
+  /* Resisable demo area */
+  .demo {
+    resize: both;
+    overflow: auto;
+    border: solid 1px var(--colour-dark);
+    padding: 1em;
+  }
 
 
 

@@ -1,8 +1,7 @@
 /*
-  sass.js
+  scripts.js
   ===========
-  compiles sass from assets folder with the govuk_modules
-  also includes sourcemaps
+  compiles JS
 */
 
 const gulp = require('gulp')

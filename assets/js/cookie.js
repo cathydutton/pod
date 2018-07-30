@@ -1,6 +1,7 @@
 /*
  Cookie banner
   ----------------------------------- */
+  
   ! function(e) {
     if (!e.hasInitialised) {
         var t = {
@@ -164,7 +165,7 @@
                     s = n.container && 1 === n.container.nodeType ? n.container : document.body;
                 o.innerHTML = i;
                 var r = o.children[0];
-                return r.style.display = "none", t.hasClass(r, "cookie-banner") && e.hasTransition && t.addClass(r, "cc-invisible"), this.onButtonClick = h.bind(this), r.addEventListener("click", this.onButtonClick), n.autoAttach && (s.firstChild ? s.insertBefore(r, s.firstChild) : s.appendChild(r)), r
+                return r.style.display = "none", t.hasClass(r, "cc-window") && e.hasTransition && t.addClass(r, "cc-invisible"), this.onButtonClick = h.bind(this), r.addEventListener("click", this.onButtonClick), n.autoAttach && (s.firstChild ? s.insertBefore(r, s.firstChild) : s.appendChild(r)), r
             }
 
             function h(n) {
@@ -190,7 +191,7 @@
                     r = n.popup,
                     a = n.button,
                     c = n.highlight;
-                r && (r.text = r.text ? r.text : t.getContrast(r.background), r.link = r.link ? r.link : r.text, s[o + ".cookie-banner"] = ["color: " + r.text, "background-color: " + r.background], s[o + ".cc-revoke"] = ["color: " + r.text, "background-color: " + r.background], s[o + " .cc-link," + o + " .cc-link:active," + o + " .cc-link:visited"] = ["color: " + r.link], a && (a.text = a.text ? a.text : t.getContrast(a.background), a.border = a.border ? a.border : "transparent", s[o + " .cc-btn"] = ["color: " + a.text, "border-color: " + a.border, "background-color: " + a.background], "transparent" != a.background && (s[o + " .cc-btn:hover, " + o + " .cc-btn:focus"] = ["background-color: " + v(a.background)]), c ? (c.text = c.text ? c.text : t.getContrast(c.background), c.border = c.border ? c.border : "transparent", s[o + " .cc-highlight .cc-btn:first-child"] = ["color: " + c.text, "border-color: " + c.border, "background-color: " + c.background]) : s[o + " .cc-highlight .cc-btn:first-child"] = ["color: " + r.text]));
+                r && (r.text = r.text ? r.text : t.getContrast(r.background), r.link = r.link ? r.link : r.text, s[o + ".cc-window"] = ["color: " + r.text, "background-color: " + r.background], s[o + ".cc-revoke"] = ["color: " + r.text, "background-color: " + r.background], s[o + " .cc-link," + o + " .cc-link:active," + o + " .cc-link:visited"] = ["color: " + r.link], a && (a.text = a.text ? a.text : t.getContrast(a.background), a.border = a.border ? a.border : "transparent", s[o + " .cc-btn"] = ["color: " + a.text, "border-color: " + a.border, "background-color: " + a.background], "transparent" != a.background && (s[o + " .cc-btn:hover, " + o + " .cc-btn:focus"] = ["background-color: " + v(a.background)]), c ? (c.text = c.text ? c.text : t.getContrast(c.background), c.border = c.border ? c.border : "transparent", s[o + " .cc-highlight .cc-btn:first-child"] = ["color: " + c.text, "border-color: " + c.border, "background-color: " + c.background]) : s[o + " .cc-highlight .cc-btn:first-child"] = ["color: " + r.text]));
                 var l = document.createElement("style");
                 document.head.appendChild(l), e.customStyles[i] = {
                     references: 1,
@@ -263,7 +264,7 @@
                     name: "cookieconsent_status",
                     path: "/",
                     domain: "",
-                    expiryDays: 365
+                    expiryDays: 30
                 },
                 onPopupOpen: function() {},
                 onPopupClose: function() {},
@@ -277,20 +278,20 @@
                     allow: "Allow cookies",
                     deny: "Decline",
                     link: "Learn more",
-                    href: "/cookies",
+                    href: "../cookies",
                     close: "&#x274c;"
                 },
                 elements: {
                     header: '<span class="cc-header">{{header}}</span>&nbsp;',
                     message: '<span id="cookieconsent:desc" class="cc-message">{{message}}</span>',
-                    messagelink: '<span id="cookieconsent:desc" class="cc-message">{{message}} <a aria-label="learn more about cookies" role=button tabindex="0" class="cc-link" href="{{href}}">{{link}}</a></span>',
-                    dismiss: '<button aria-label="dismiss cookie message" tabindex="0" class="button--primary button--cookie">{{dismiss}}</>',
+                    messagelink: '<span id="cookieconsent:desc" class="cc-message">{{message}} <a aria-label="learn more about cookies" role=button tabindex="0" class="anchor cc-link" href="{{href}}">{{link}}</a></span>',
+                    dismiss: '<button aria-label="dismiss cookie message" tabindex="0" class="button--primary button--cookie cc-btn cc-dismiss">{{dismiss}}</button>',
                     allow: '<a aria-label="allow cookies" role=button tabindex="0"  class="cc-btn cc-allow">{{allow}}</a>',
                     deny: '<a aria-label="deny cookies" role=button tabindex="0" class="cc-btn cc-deny">{{deny}}</a>',
-                    link: '<a aria-label="learn more about cookies" role=button tabindex="0" class="cc-link" href="{{href}}" target="_blank">{{link}}</a>',
+                    link: '<a aria-label="learn more about cookies" role=button tabindex="0" class="anchor cc-link" href="{{href}}">{{link}}</a>',
                     close: '<span aria-label="dismiss cookie message" role=button tabindex="0" class="cc-close">{{close}}</span>'
                 },
-                window: '<div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cookie-banner {{classes}}"><!--googleoff: all-->{{children}}<!--googleon: all--></div>',
+                window: '<div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cookie-banner"><!--googleoff: all-->{{children}}<!--googleon: all--></div>',
                 revokeBtn: '<div class="cc-revoke {{classes}}">Cookie Policy</div>',
                 compliance: {
                     info: '<div class="cc-compliance">{{dismiss}}</div>',

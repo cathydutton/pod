@@ -29,11 +29,12 @@
 
   p {
     font-size: 1em;
+    margin-bottom: .6em;
   }
 
   .page-headings p {
     font-size: 1.188em;
-    border-left: 4px solid var(--colour-light);
+    border-left: 4px solid var(--colour-bright);
     padding-left: .4em;
   }
 
