@@ -1,6 +1,6 @@
 /*
-  Accesability buttons
-  Controll buttons for text size, theme and font 
+  Accessibility buttons
+  Control buttons for text size, theme and font 
   ----------------------------------- */
 
 // GLOBAL

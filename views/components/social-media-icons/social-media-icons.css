@@ -11,7 +11,7 @@
     display: inline-block;
   }
   
-  .social-media-icons__anchor {
+  .social-media-icons__anchor svg {
     position: relative;
     display: block;
     width: 75px;
@@ -22,8 +22,8 @@
     fill: var(--colour-dark);
   }
 
-  .social-media-icons__anchor:hover,
-  .social-media-icons__anchor:focus {
+  .social-media-icons__anchor svg:hover,
+  .social-media-icons__anchor svg:focus {
     border-radius: 100%;
     color: var(--colour-bright);
     fill: var(--colour-bright);
