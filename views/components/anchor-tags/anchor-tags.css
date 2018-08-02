@@ -2,19 +2,16 @@
   Anchor tags
   ----------------------------------- */
 
-  a {
-    border-bottom: 1px solid currentColor;
+  .anchor {
+    background: linear-gradient(90deg, currentColor 66%, transparent 0) repeat-x;
+	  background-size: .3em 2px;
+	  background-position: 0 1em;
     color: inherit;
     text-decoration: none;
   }
   
-  a:hover,
-  a:focus  {
-    transition: all .3s ease-in-out;
-  }
-
   /* External window */
-  a[target=_blank]::after {
+  .anchor[target=_blank]::after {
     display: inline-block;
     overflow: hidden;
     width: 0;
@@ -25,7 +22,15 @@
 
   .anchor:hover,
   .anchor:focus  {
-    border-bottom: 5px solid var(--colour-bright);
+    transition: all .3s ease-in-out;
+    background: linear-gradient(var(--colour-bright), var(--colour-bright)) no-repeat;
+    background-size: 100% 2px;
+	  background-position: 0 1.02em;
+  }
+
+  .anchor:active,
+  .anchor:visited  {
+
   }
   
 

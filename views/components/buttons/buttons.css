@@ -21,7 +21,7 @@
   button:visited {
     opacity: 0.74;
     text-decoration: underline;
-    border-radius: .5em;
+    border-radius: .8em;
   }
 
   button[disabled="disabled"],

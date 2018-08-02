@@ -3,27 +3,63 @@
   ----------------------------------- */
 
   .tab-list {
-    background: var(--colour-dark);
     padding: 0;
     margin: 0;
   }
   
   .tab-item {
+    /* background: var(--colour-dark);
     display: inline-block;
+    margin-right: -5px; */
+    position: relative;
+    display: inline-block;
+    padding: 1.5em 1.5em 1em;
+    color: inherit;
+    text-decoration: none;
+    margin: 0 -7px;
   }
+
+  .tab-item::before {
+    /* content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: .5em;
+    left: 0;
+    z-index: -1;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    background: #ddd;
+    box-shadow: 0 2px hsla(0,0%,100%,.5) inset;
+    transform: perspective(5px) rotateX(2deg);
+    transform-origin: bottom left; */
+}
   
   .tab-link {
-    color: var(--colour-white);
+    /* color: var(--colour-white);
     display: block;
-    padding: 1em 1em;
-    margin-right: -5px;
-    position: relative;
+    /* padding: 1em 1em; */
+    /* position: relative;
     text-decoration: none;
     -webkit-transition: all 100ms cubic-bezier(0.42, 0, 1, 1);
     transition: all 100ms cubic-bezier(0.42, 0, 1, 1);
     border-bottom: 0;
     border-right: solid 1px var(--colour-light);
     text-decoration: underline;
+    padding: 1.5em 2em 1em 1em; */ 
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: .5em;
+    left: 0;
+    z-index: -1;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    background: #ddd;
+    box-shadow: 0 2px hsla(0,0%,100%,.5) inset;
+    transform: perspective(5px) rotateX(2deg);
+    transform-origin: bottom left;
   }
 
   .tab-link:hover  {
@@ -66,35 +102,4 @@
     box-shadow: inset 0 0 0 2px var(--colour-medium);
   }
   
-  /* @media only screen and (max-width: 360px) {
-
-    .tab-list {
-      background: none;
-      color: var(--colour-dark);
-    }
-
-    .tab-item {
-      display: block;
-    }
-
-    .tab-link {
-      color: var(--colour-dark);
-      text-decoration: underline;
-      padding: .4em 0;
-    }
-
-    .tab-link:hover {
-      color: var(--colour-bright);
-      background: none;
-    }
-
-    .tab-link[data-tab-active] {
-      background: none;
-    }
-
-    .tab-link[data-tab-active]:hover {
-      color: var(--colour-dark);
-    }
-    
-  }
-   */
+ 

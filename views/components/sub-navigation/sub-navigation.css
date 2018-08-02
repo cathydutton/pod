@@ -9,11 +9,15 @@
   
 .sub-navigation__anchor {
   color: var(--colour-dark);
-  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .sub-navigation__anchor.active {
   border-bottom: 5px solid var(--colour-bright);
+}
+
+.sub-navigation__anchor.visited {
+
 }
 
 .sub-navigation__anchor:hover,

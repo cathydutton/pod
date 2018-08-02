@@ -59,19 +59,25 @@
     </ul>
     <div id="tab-1" class="tab-panel">
       <h3 class="visually-hidden">HTML</h3>
-      <button class="button--copy button--right" data-clipboard-target="#HTML">Copy</button>
-      <pre id="HTML"><code>{{- componentHtml | e -}}</code></pre>
+      <pre id="HTML">
+        <button class="button--copy button--right" data-clipboard-target="#HTML">Copy</button>
+        <code>{{- componentHtml | e -}}</code>
+      </pre>
     </div>
     <div id="tab-2" class="tab-panel">
       <h3 class="visually-hidden">CSS</h3>
-      <button class="button--copy button--right" data-clipboard-target="#CSS">Copy</button>
-      <pre id="CSS"><code>{{- componentCSS | e -}}</code></pre>
+      <pre id="CSS">
+        <button class="button--copy button--right" data-clipboard-target="#CSS">Copy</button>
+        <code>{{- componentCSS | e -}}</code>
+      </pre>
     </div>
     {% if hasJS %}
       <div id="tab-3" class="tab-panel">
         <h3 class="visually-hidden">JavaScript</h3>
-        <button class="button--copy button--right" data-clipboard-target="#JavaScript">Copy</button>
-        <pre id="JavaScript"><code>{{- componentJS | e -}}</code></pre>
+          <pre id="JavaScript">
+            <button class="button--copy button--right" data-clipboard-target="#JavaScript">Copy</button>
+            <code>{{- componentJS | e -}}</code>
+          </pre>
       </div>
     {% endif %}
   </div>
