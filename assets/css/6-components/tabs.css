@@ -26,6 +26,10 @@
     text-decoration: underline;
   }
 
+  .tab-item:last-child .tab-link {
+    border-right: 0
+  }
+
   .tab-link:hover  {
     background: var(--colour-bright);
     color: var(--colour-dark);
