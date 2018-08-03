@@ -1,10 +1,10 @@
 {
-  "name": "boilerplate",
+  "name": "Pod",
   "version": "1.0.0",
-  "description": "Node JS boilerplate",
+  "description": "Pod component library",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "gulp"
   },
   "author": "Cathy Dutton",
   "license": "ISC",
