@@ -21,10 +21,28 @@
 
   <section>
     <h2>Demo</h2>
-    <p>Resize the panel to view the demo in different container sizes.</p>
-    <div class="demo">
+    <p>Resize the panel to view the component demo in different container sizes.</p>
+    <label>Width</label>
+    <input type='range' min='20' max='100' value='100' step='10' 
+    onchange="setStyleOn('width', 'demo', this.value + '%')" /> 
+    <div id="demo">
       {% include "components/" + componentName + "/" + componentName + ".njk" %}
     </div>
+
+   
+   
+
+
+<script>
+function setStyleOn(rule, targetId, value) {
+    x = document.getElementById(targetId);
+    x.style[rule] = value;
+}
+</script>
+
+
+
+
   </section>
   <section>
     <h2>Markup</h2>

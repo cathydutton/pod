@@ -10,6 +10,16 @@
 .sub-navigation__anchor {
   color: var(--colour-dark);
   hyphens: auto;
+  /* text-decoration: none; */
+}
+
+.sub-navigation__anchor::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  background: var(--colour-bright);
+  transition: width .3s;
 }
 
 .sub-navigation__anchor.active {
@@ -22,7 +32,23 @@
 
 .sub-navigation__anchor:hover,
 .sub-navigation__anchor:focus  {
-  border-bottom: 5px solid var(--colour-bright);
+  text-decoration: none;
+}
+
+.sub-navigation__anchor:hover::after,
+.sub-navigation__anchor:focus::after  {
+  width: 100%;
+}
+
+.sub-navigation__anchor.active {
+  text-decoration: none;
+  cursor: not-allowed
+}
+
+.sub-navigation__anchor.active::after {
+  width: 0;
 }
     
+
+
 

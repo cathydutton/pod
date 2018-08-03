@@ -10,7 +10,7 @@
     color: var(--colour-bright);
     border-radius: 50%;
     border: solid 4px var(--colour-bright);
-    background: var(--colour-light);
+    background: var(--colour-white);
     text-align: center;
     animation: fadeIn 2s forwards;
     text-align: center;

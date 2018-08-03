@@ -37,11 +37,10 @@
   }
   
   /* Resisable demo area */
-  .demo {
-    resize: both;
-    overflow: auto;
-    border: solid 1px var(--colour-dark);
+  #demo {
+    border: 1px solid var(--colour-dark);
     padding: 1em;
+    margin-top: 1em;
   }
 
 
