@@ -18,6 +18,8 @@
   display: block;
   background: var(--colour-dark);
   list-style: none;
+  /* // make max content off all nav items */
+  /* min-width: min-content; */
   min-width: 180px;
   hyphens: auto;
 }

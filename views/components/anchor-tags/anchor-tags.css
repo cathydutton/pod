@@ -10,28 +10,6 @@
     text-decoration: none;
   }
   
-  /* External window */
-  .anchor[target=_blank]::after {
-    display: inline-block;
-    overflow: hidden;
-    width: 0;
-    height: 0;
-    white-space: nowrap;
-    content: '(opens new window)';
-  }
 
-  .anchor:hover,
-  .anchor:focus  {
-    transition: all .3s ease-in-out;
-    background: linear-gradient(var(--colour-bright), var(--colour-bright)) no-repeat;
-    background-size: 100% 2px;
-	  background-position: 0 1.02em;
-  }
-
-  .anchor:active,
-  .anchor:visited  {
-
-  }
-  
 
   

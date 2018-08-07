@@ -2,9 +2,13 @@
   Sub navigation
   ----------------------------------- */
 
+.sub-navigation__list {
+  margin: 1em .4em;
+}
+
 .sub-navigation__item {
   display: inline-block;
-  margin: 1em .4em;
+  margin: 0 .4em;
 }
   
 .sub-navigation__anchor {

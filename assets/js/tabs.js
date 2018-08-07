@@ -1,6 +1,10 @@
 /*
- Tabs
-  ----------------------------------- */
+Tabs
+----------------------------------- */
+
+/** This tab solution is based on Scott Vinkle's Simple Tabs with some modications to  remove the jQuery dependency, as well as modifying the UI look and feel.
+*** https://codepen.io/svinkle/pen/edmDF
+***/
 
 (function() {
   'use strict';
@@ -8,7 +12,7 @@
 
   // Tabs
  
-  var tabWidget = [].slice.call(document.querySelectorAll('.js-tab-widget')) || [];
+  var tabWidget = [].slice.call(document.querySelectorAll('.js-tabs')) || [];
   
   // Make URLs descriptive
   var tabLinkText = ["html", "css", "JavaScript"];
@@ -122,7 +126,7 @@
          
       // Click Event Listener
        link.addEventListener('click', function(e) {
-       // e.preventDefault();
+        e.preventDefault();
        });
        
        // Click Event Listener

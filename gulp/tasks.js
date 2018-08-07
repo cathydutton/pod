@@ -10,8 +10,8 @@ const runSequence = require('run-sequence')
 gulp.task('default', function (done) {
   runSequence('generate-assets',
                 'watch',
-                //'audit',
-                'server', done)
+                'server', 
+                done)
 })
 
 gulp.task('generate-assets', function (done) {

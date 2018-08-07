@@ -22,10 +22,18 @@
   <section>
     <h2>Demo</h2>
     <p>Resize the panel to view the component demo in different container sizes.</p>
-    <label>Width</label>
-    <input type='range' min='20' max='100' value='100' step='10' 
-    onchange="setStyleOn('width', 'demo', this.value + '%')" /> 
-    <div id="demo">
+
+    <div class="slidecontainer">
+      <label>Width:</label>
+      <input type='range' class="slider" min='30' max='100' value='100' step='10' 
+      onchange="setStyleOn('width', 'demo', this.value + '%')" /> 
+     </div>
+
+    {# <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div> #}
+
+    <div class="clear" id="demo">
       {% include "components/" + componentName + "/" + componentName + ".njk" %}
     </div>
 
@@ -40,54 +48,57 @@ function setStyleOn(rule, targetId, value) {
 }
 </script>
 
-
-
-
   </section>
+
+
+
   <section>
     <h2>Markup</h2>
     <p>Use the tabbend navagation to view the component markup.</p>
   </section>
 
   <span class="visually-hidden">Use left and right arrows to navigate between tabs.</span>
-  <div class="js-tab-widget tabs">
+  <div class="js-tabs tabs">
     <ul class="tab-list">
-    <li class="tab-item" data-tab-active>
-       <a class="tab-link" href="#html" data-tab-active aria-selected="true">HTML</a>
+      <li class="tab-item" data-tab-active>
+       <a class="tab-link" href="##tab-1" data-tab-active aria-selected="true">HTML</a>
       </li>
       <li class="tab-item">
-        <a class="tab-link" href="#css">CSS</a>
+        <a class="tab-link" href="##tab-2">CSS</a>
       </li>
       {% if hasJS %}
         <li class="tab-item">
-          <a class="tab-link" href="#JavaScript">JavaScript</a>
+          <a class="tab-link" href="##tab-3">JavaScript</a>
         </li>
       {% endif %}
     </ul>
-    <div id="tab-1" class="tab-panel">
-      <h3 class="visually-hidden">HTML</h3>
-      <pre id="HTML">
-        <button class="button--copy button--right" data-clipboard-target="#HTML">Copy</button>
-        <code>{{- componentHtml | e -}}</code>
+    <div id="#tab-1" class="tab-panel" role="tabpanel" aria-labelledby="tab_HTML">
+      <h3>HTML</h3>
+      <pre>
+        <button class="button--copy button--right" data-clipboard-target="#HTMLCode">Copy</button>
+        <code id="HTMLCode">{{- componentHtml | e -}}</code>
       </pre>
     </div>
-    <div id="tab-2" class="tab-panel">
-      <h3 class="visually-hidden">CSS</h3>
-      <pre id="CSS">
-        <button class="button--copy button--right" data-clipboard-target="#CSS">Copy</button>
-        <code>{{- componentCSS | e -}}</code>
+    <div id="#tab-2" class="tab-panel" role="tabpanel" aria-labelledby="tab_CSS">
+      <h3>CSS</h3>
+      <pre>
+        <button class="button--copy button--right" data-clipboard-target="#CSSCode">Copy</button>
+        <code id="CSSCode">{{- componentCSS | e -}}</code>
       </pre>
     </div>
     {% if hasJS %}
-      <div id="tab-3" class="tab-panel">
-        <h3 class="visually-hidden">JavaScript</h3>
-          <pre id="JavaScript">
-            <button class="button--copy button--right" data-clipboard-target="#JavaScript">Copy</button>
-            <code>{{- componentJS | e -}}</code>
-          </pre>
+      <div id="#tab-3" class="tab-panel" role="tabpanel" aria-labelledby="tab_JavaScript">
+        <h3>JavaScript</h3>
+        <pre>
+          <button class="button--copy button--right" data-clipboard-target="#JavaScriptCode">Copy</button>
+          <code id="JavaScriptCode">{{- componentJS | e -}}</code>
+        </pre>
       </div>
     {% endif %}
   </div>
+
+ <button>Download base files</button>
+
 
 {% endblock %}
 

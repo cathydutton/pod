@@ -9,6 +9,6 @@
 @import '4-elements';
 @import '5-layout';
 @import '6-components/typography';
-@import '6-components/tabs';
 @import '6-components/cookie-banner';
+@import '6-components/range-input';
 @import '7-utilities';
