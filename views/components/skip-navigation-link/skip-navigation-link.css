@@ -12,5 +12,9 @@
     right: auto;
   }
 
+  #main-content [tabindex="-1"] {
+    outline: none;
+  }
+
 
 

@@ -5,30 +5,30 @@
 
 /* Colors */
 :root {
-  --colour-black: #121212;
-  --colour-dark: #001F3F;
-  --colour-medium: #03366A;
-  --colour-light: #f3f3f3;
-  --colour-white: #FFFFFF;
-  --colour-bright: #FBDB1D;
+  --colour-black: hsl(0, 0%, 7%);
+  --colour-dark: hsl(210, 100%, 12%);
+  --colour-medium: hsl(210, 94%, 21%);
+  --colour-light: hsl(0, 0%, 80%);
+  --colour-white: hsl(0, 0%, 100%);
+  --colour-bright: hsl(51, 97%, 55%);
 }
 
 .theme-contrast {
-  --colour-black: #FFFFFF;
-  --colour-dark: #FBFF7C;
-  --colour-medium: #FFCA2D;
-  --colour-light: #434444;
-  --colour-white: #001F3F;
-  --colour-bright: #9D2064;
+  --colour-black: hsl(0, 0%, 100%);
+  --colour-dark: hsl(62, 100%, 74%);
+  --colour-medium: hsl(45, 100%, 59%);
+  --colour-light: hsl(180, 1%, 26%);
+  --colour-white: hsl(210, 100%, 12%);
+  --colour-bright: hsl(327, 66%, 37%);
 }
 
 .theme-monochrome {
-  --colour-black: #211505;
-  --colour-dark: #3c240d;
-  --colour-medium: #553C1C;
-  --colour-light: #FDE5BA;
-  --colour-white: #FDF1D8;
-  --colour-bright: #EFA60B;
+  --colour-black: rgb(33, 21, 5);
+  --colour-dark: hsl(29, 64%, 14%);
+  --colour-medium: hsl(34, 50%, 22%);
+  --colour-light: hsl(39, 94%, 86%);
+  --colour-white: hsl(41, 90%, 92%);
+  --colour-bright: hsl(41, 91%, 49%);
 }
 
 /* Fonts */

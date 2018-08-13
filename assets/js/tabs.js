@@ -142,8 +142,8 @@ Tabs
  
     // set up tab panels
     tabPanels.forEach(function(panel, i) {
-      var nextTabLink = document.createElement('a'),
-          nextTabLinkIndex = (i < tabPanels.length - 1) ? i+1 : 0;
+      // var nextTabLink = document.createElement('a'),
+      //     nextTabLinkIndex = (i < tabPanels.length - 1) ? i+1 : 0;
        
       var attributes = {
         'role': 'tabpanel',
@@ -152,6 +152,7 @@ Tabs
       };
        
       // set up next tab link
+      var nextTabLink = document.createElement('a'),
       //nextTabLink.setAttribute('href', '#tab-link-' + nextTabLinkIndex);
       nextTabLink.setAttribute('href', '#tab-link-' + tabLinkText[nextTabLinkIndex]);
       nextTabLink.setAttribute('class', 'anchor');
