@@ -3,6 +3,9 @@
   CSS variables for fonts, colors, etc.
   ----------------------------------- */
 
+
+  /* // Change the Alpha prop at the end for states */
+
 /* Colors */
 :root {
   --colour-black: hsl(0, 0%, 7%);
