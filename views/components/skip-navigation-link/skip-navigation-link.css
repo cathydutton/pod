@@ -10,9 +10,10 @@
   
   [href="#main-content"]:focus {
     right: auto;
+    background: var(--colour-bright);
   }
 
-  #main-content [tabindex="-1"] {
+  #main-content[tabindex="-1"] {
     outline: none;
   }
 
