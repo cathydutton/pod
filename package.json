@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Pod component library",
   "main": "app.js",
+  "engines": {
+    "node": ">=6.11.1 <7.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
