@@ -1,1 +1,1 @@
-web: node ./node_modules/gulp/bin/gulp generate-assets && node app.js 
+web: gulp generate-assets && node app.js 
