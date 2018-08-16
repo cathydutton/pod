@@ -51,8 +51,10 @@ app.get('/component-list', function (req, res) {
 
 
 // Listen to port
-var port_number = server.listen(process.env.PORT || 3000);
-app.listen(port_number);
+var port = process.env.PORT || 8080;
+app.listen(port, function() {
+  console.log('pod is running on http://localhost:' + port);
+});
 
 
 console.log("you are listening too port 3000")
