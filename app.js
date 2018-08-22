@@ -49,8 +49,6 @@ app.get('/component-list', function (req, res) {
   res.render('component-list')
 })
 
-gulp.start('default');
-
 // Listen to port
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
