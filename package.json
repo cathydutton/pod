@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "postinstall": "gulp default"
+    "postinstall": "gulp"
   },
   "author": "Cathy Dutton",
   "license": "ISC",
@@ -19,7 +19,9 @@
     "express": "^4.16.3",
     "nunjucks": "^3.1.2",
     "autoprefixer": "^8.3.0",
-    "postcss": "^6.0.21",
+    "postcss": "^6.0.21"
+  },
+  "devDependencies": {
     "css-mqpacker": "^6.0.2",
     "csswring": "^6.0.3",
     "fs": "0.0.1-security",
@@ -37,8 +39,5 @@
     "postcss-import": "^11.1.0",
     "require-dir": "^1.0.0",
     "run-sequence": "^2.2.1"
-  },
-  "devDependencies": {
- 
   }
 }
