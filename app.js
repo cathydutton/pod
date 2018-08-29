@@ -49,12 +49,17 @@ app.get('/component-list', function (req, res) {
   res.render('component-list')
 })
 
+// App folder routes get priority
+// app.get(/^\/([^.]+)$/, function (req, res) {
+//   utils.matchRoutes(req, res)
+// })
+
 // Listen to port
-var port = process.env.PORT || 8080;
-app.listen(port, function() {
-  console.log('pod is running on http://localhost:' + port);
-});
+// var port = process.env.PORT || 8080;
+// app.listen(port, function() {
+//   console.log('pod is running on http://localhost:' + port);
+// });
 
 
-console.log("you are listening too port 3000")
+// console.log("you are listening too port 3000")
 
